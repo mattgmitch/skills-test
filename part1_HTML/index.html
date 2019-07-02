@@ -12,26 +12,29 @@
     <form>
       <h2>Form Heading (h2)</h2>
       <label for="firstName">First Name</label>
-      <input id="firstName" />
+      <input type="text" name="firstName" id="firstName" />
 
       <label for="lastName">Last Name</label>
-      <input id="lastName" />
+      <input type="text" name="lastName" id="lastName" />
 
       <label for="username">Username</label>
-      <input id="username" />
+      <input type="text" name="username" id="username" />
 
       <label for="password">Password</label>
-      <input id="password" />
+      <input type="password" name="password" id="password" />
 
-      <select>
-        <option value="">Select State</option>
+      <label for="state">State</label>
+      <select name="state" id="state">
+        <option value="none">Select State</option>
+        <option value="CO">Colorado</option>
         <option value="IN">Indiana</option>
+        <option value="MA">Massachusetts</option>
       </select>
 
       <button id="reset">Reset</button>
       <input type="submit" />
     </form>
-    
+
   </body>
 
 </html>
