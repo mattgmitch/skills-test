@@ -1,0 +1,9 @@
+// Generating @each list of background colors from white to black
+
+$bgcolors: #FFF, #EEE, #CCC, #999, #666, #333, #000;
+
+@each $bgcolor in $bgcolors {
+  .overlay-#{$bgcolor} {
+    background: $bgcolor;
+  }
+}

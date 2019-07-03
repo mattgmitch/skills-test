@@ -1,0 +1,23 @@
+/* Sample SASS file architecture
+   This would typically be categorized by function (base/header or base/footer, layout etc.)
+*/
+.overlay-#FFF {
+  background: #FFF; }
+
+.overlay-#EEE {
+  background: #EEE; }
+
+.overlay-#CCC {
+  background: #CCC; }
+
+.overlay-#999 {
+  background: #999; }
+
+.overlay-#666 {
+  background: #666; }
+
+.overlay-#333 {
+  background: #333; }
+
+.overlay-#000 {
+  background: #000; }
