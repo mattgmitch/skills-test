@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Part 4: Prototyping - Train Wreck!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <h1>Train Wreck!</h1>
+      <p>A train leaves Maryland, traveling north to the a town some distance away. Another train leaves that town at either the same time, or on a brief delay, traveling south on the same track. Play with the settings below to see when they will collide. Remember, that rate * time = distance.</p>
+
+      <form id="trainWreck">
+        <div>
+          <label for="trainA">Train A - Speed</label>
+          <input type="text" name="trainA" id="trainA" class="field" placeholder="60mph" />
+          <span class="error">Please enter a speed</span>
+        </div>
+
+        <div>
+          <label for="trainB">Train B - Speed</label>
+          <input type="text" name="trainB" id="trainB" placeholder="60mph" />
+          <span class="error">Please enter a speed</span>
+        </div>
+
+        <div>
+          <label for="distance">Distance between towns</label>
+          <input type="text" name="distance" id="distance" placeholder="200 miles" />
+          <span class="error">Please enter a distance</span>
+        </div>
+
+        <div>
+          <label for="delay">Train B - Delay</label>
+          <input type="text" name="delay" id="delay" placeholder="15 minutes" />
+          <span class="error">Please enter a time</span>
+        </div>
+
+        <input type="submit" value="Try it!" name="submit" />
+      </form>
+
+      <section class="result">
+        <h2>Result:</h2>
+        <div class="trainBresult">
+          <div class="trainAresult">
+            <span class="collision">Smash!!</span>
+          </div>
+        </div>
+
+        <p class="details">
+          Train A collides with Train B at 165 miles from Maryland, 64 minutes after it left.
+        </p>
+      </section>
+    </main>
+    
+  </body>
+</html>

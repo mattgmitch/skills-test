@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Part 3: JavaScript - Matt Mitchell</title>
+  </head>
+
+  <body>
+    <h1>Part 3: JavaScript</h1>
+    <p>This version contains the JavaScript portion of the test</p>
+
+    <ul id="dynamicList">
+      <!--This is where the numbers will be populated-->
+    </ul>
+
+    <script type="text/javascript">
+        const nums = [3, 1, 4, 5, 2];
+        const transformNums = nums.sort();
+        const transformedNums = transformNums(nums);
+        
+        
+
+        window.onload = function() {
+          console.log(transformedNums); // => [1,2,3,4,5,5,4,3,2,1,1,2,3,4,5]
+        }
+
+    </script>
+
+  </body>
+
+</html>

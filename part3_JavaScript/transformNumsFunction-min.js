@@ -1,0 +1,1 @@
+function transformNums(){const o=transformNums([3,1,4,5,2]);console.log(o)}

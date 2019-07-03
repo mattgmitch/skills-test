@@ -1,0 +1,94 @@
+/******** Global / General Styles ********/
+
+/******** Including padding/border for object widths ********/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #666;
+}
+
+/******** Headings *********/
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/********** Layout **********/
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/******** Forms ********/
+#trainWreck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 2em 0;
+}
+#trainWreck div {
+  flex: 0 1 48%;
+  margin: 0 0 1em 0;
+}
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type='text'] {
+  padding: 1em;
+  border: 2px solid #CCC;
+  width: 100%;
+  margin: .5em 0;
+}
+
+input[type='submit'] {
+  background: #E6A136;
+  color: #FFF;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.error {
+  color: #883A3A;
+  font-weight: bold;
+}
+
+/******** Results ********/
+.result{}
+
+.result .trainAresult, .result .trainBresult {
+  height: 10px;
+}
+
+.result .trainAresult {
+  width: 50%;
+  background: #5AB89E;
+  position: relative;
+}
+
+.result .trainBresult {
+  width: 100%;
+  background: #E6A136;
+}
+
+.result .trainAresult .collision {
+  font-weight: bold;
+  position: absolute;
+  right: -2em;
+  top: -1.75em;
+}
