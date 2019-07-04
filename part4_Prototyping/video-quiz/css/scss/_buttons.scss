@@ -1,0 +1,21 @@
+/**** Button Styles *******/
+
+/** Removing default browser styles **/
+input[type='button'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+.button, input[type='button'], a.button {
+  padding: .75em 1.5em;
+  background: #367799;
+  color: #FFF;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.button:hover, input[type='button']:hover, a.button:hover {
+  background: #295871;
+  cursor: pointer;
+}

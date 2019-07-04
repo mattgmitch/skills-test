@@ -1,0 +1,23 @@
+/**** Header ****/
+header {
+  background: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  padding: .25em 2em;
+  width: 100%;
+  .logo {
+    height: 60px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  .notify img, .help img, .account {
+    height: 30px;
+    margin-left: 2em;
+  }
+  .account {
+    display: block;
+    margin-top: .5em;
+  }
+}

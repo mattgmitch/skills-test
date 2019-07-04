@@ -1,0 +1,33 @@
+/**** Quiz specific styles ****/
+.quiz {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 12em;
+  .video {
+    flex: 0 1 auto;
+    img {
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+  .quizContent {
+    color: #666;
+    border: 1px solid #CCC;
+    h3.question {
+      background: #F4F3F3;
+      padding: 1em 1.5em;
+      font-size: 1em;
+      font-weight: normal;
+    }
+    p {
+      border: none;
+      padding: 0 1.5em;
+    }
+    input[type='button'] {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/******** Global / General Styles ********/
+
+/******** Including padding/border for object widths ********/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+html, body {
+  margin: 0;
+}
+
+/******** Links ********/
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #7E8383;
+}
+
+a:hover {
+  text-decoration: underline;
+}
