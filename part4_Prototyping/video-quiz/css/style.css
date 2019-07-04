@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: .5em 2.5em .5em 1em;
     font-size: 1em; }
 
+/**** Adding select list arrow w/ psuedo elements ****/
 .dropDown:after {
   content: "";
   position: absolute;

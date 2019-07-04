@@ -9,20 +9,51 @@
     <h1>Part 3: JavaScript</h1>
     <p>This version contains the JavaScript portion of the test</p>
 
-    <ul id="dynamicList">
+    <ul id="myList">
       <!--This is where the numbers will be populated-->
     </ul>
 
+    <div id="test">
+
+    </div>
     <script type="text/javascript">
         const nums = [3, 1, 4, 5, 2];
-        const transformNums = nums.sort();
-        const transformedNums = transformNums(nums);
-        
-        
+        const transformNums = nums.toString();
+        const moreNums = nums.push('1' , '2' , '3' , '4' , '5' , '5' , '4' , '3' , '2' , '1');
+        console.log(nums);
+    </script>
 
-        window.onload = function() {
-          console.log(transformedNums); // => [1,2,3,4,5,5,4,3,2,1,1,2,3,4,5]
+    <script type='text/javascript'>
+      var ul = document.createElement('ul');
+      for (i = 1; i<101; i++) {
+        var li = document.createElement('li');
+        var even = document.createTextNode("  EVEN");
+        var odd = document.createTextNode("  ODD");
+        var threeMult = document.createTextNode("  3 MULTIPLE");
+        var fiveMult = document.createTextNode("  5 MULTIPLE");
+
+        li.innerHTML += i;
+        ul.appendChild(li);
+
+        if (i % 2 === 0) { // number is even
+          //li.innerHTML += i + " EVEN";
+          li.appendChild(even);
+        } else if (i % 1 === 0) { // number is odd
+          //li.innerHTML += i + " ODD";
+          li.appendChild(odd);
         }
+        if (i % 3 === 0) { // number is multiple of 3
+            //li.innerHTML = i + " 3 MULTIPLE";
+            li.appendChild(threeMult);
+        }
+        if (i % 5 === 0) { // number is multiple of 5
+            //li.innerHTML = i + " 5 MULTIPLE";
+            li.appendChild(fiveMult);
+        }
+
+
+    }
+    document.getElementById('test').appendChild(ul);
 
     </script>
 
