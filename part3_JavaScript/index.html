@@ -7,15 +7,13 @@
 
   <body>
     <h1>Part 3: JavaScript</h1>
-    <p>This version contains the JavaScript portion of the test</p>
+    <p>This page contains the JavaScript portion of the test. I did the best I could with the transformNums section. It's been a while since I've done any heavy JavaScript work, but it is starting to come back to me.</p>
 
-    <ul id="myList">
+    <h2>Dynamically Generated Unordered List of 100 Items</h2>
+    <div id="myList">
       <!--This is where the numbers will be populated-->
-    </ul>
-
-    <div id="test">
-
     </div>
+
     <!-- TransformNums script -->
     <script type="text/javascript">
         const nums = [3, 1, 4, 5, 2];
@@ -38,24 +36,21 @@
         ul.appendChild(li);
 
         if (i % 2 === 0) { // number is even
-          //li.innerHTML += i + " EVEN";
           li.appendChild(even);
         } else if (i % 1 === 0) { // number is odd
-          //li.innerHTML += i + " ODD";
           li.appendChild(odd);
         }
         if (i % 3 === 0) { // number is multiple of 3
-            //li.innerHTML = i + " 3 MULTIPLE";
             li.appendChild(threeMult);
         }
         if (i % 5 === 0) { // number is multiple of 5
-            //li.innerHTML = i + " 5 MULTIPLE";
             li.appendChild(fiveMult);
         }
 
 
     }
-    document.getElementById('test').appendChild(ul);
+
+    document.getElementById('myList').appendChild(ul);
 
     </script>
 
